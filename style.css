@@ -78,7 +78,7 @@ p {
 /* Home */ 
  
 #home { 
-    background: linear-gradient(white); 
+    background: transparent; 
     color: black; 
     min-height: 100vh; 
     display: flex; 
@@ -420,7 +420,7 @@ form button {
  
  
 @media (min-width:381px) and (max-width:668px){ 
- 
+
     nav{ 
         padding:15px 20px; 
     } 
@@ -436,7 +436,7 @@ form button {
     ul a{ 
         font-size:16px; 
     } 
- 
+
     #home{ 
         flex-direction:column-reverse; 
         text-align:justify; 
@@ -503,6 +503,38 @@ form button {
     form{ 
         width:80%; 
         max-width:500px; 
-    } 
+    }
 } 
- 
+body.dark {
+  background-color: #121212 ;
+}
+
+body.dark nav,
+body.dark #home,
+body.dark #about,
+body.dark #services,
+body.dark #contact {
+  background-color: #121212 ;
+  color: white ;
+}
+
+body.dark .service1,
+body.dark .service2,
+body.dark .service3,
+body.dark .service4 {
+  background-color: #1e1e1e ;
+  color: white ;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark p,
+body.dark label,
+body.dark a {
+  color: white ;
+}
+
+body.dark button {
+  background-color: white ;
+  color: black ;
+}
